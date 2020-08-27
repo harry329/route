@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "76b4d84c-bdbc-4a5c-8057-7327df9462da",
+		"name": "Route",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/route",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"I-90\",\r\n                \"start_state\": \"NY\",\r\n                \"end_state\" : \"Washington\",\r\n                \"length\" : \"660 miles\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/route",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/route",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"I-55\",\r\n                \"start_state\": \"Chicago\",\r\n                \"end_state\" : \"Texas\",\r\n                \"length\" : \"660 miles\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/route",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"route"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/route",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"I-55\",\r\n                \"start_state\": \"Chicago\",\r\n                \"end_state\" : \"Texas\",\r\n                \"length\" : \"660 miles\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/route/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"route",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/route",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"I-55\",\r\n                \"start_state\": \"Chicago\",\r\n                \"end_state\" : \"Texas\",\r\n                \"length\" : \"660 miles\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/route/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"route",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/route",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"I-90\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/route/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"route",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/business",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"Harry's Dinner\",\r\n                \"state\": \"IL\",\r\n                \"city\" : \"Chicago\",\r\n                \"zip\" : \"60601\",\r\n                 \"highways\": \"I-55\",\r\n                \"type_of_business\": \"Restaurant\",\r\n                \"miles_away\" : \"22 miles\",\r\n                \"avg_amt\" : \"$ 25\",\r\n                \"lat\" : \"18\",\r\n                \"lng\" : \"18\",\r\n                \"freeway_id\" : 2\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/business",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/business/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"Harry's Dinner\",\r\n                \"state\": \"IL\",\r\n                \"city\" : \"Chicago\",\r\n                \"zip\" : \"60601\",\r\n                 \"highways\": \"I-55\",\r\n                \"type_of_business\": \"Restaurant\",\r\n                \"miles_away\" : \"22 miles\",\r\n                \"avg_amt\" : \"$ 25\",\r\n                \"lat\" : \"18\",\r\n                \"lng\" : \"18\",\r\n                \"freeway_id\" : 3\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/business/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"business",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/business",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"Harry's Dinner\",\r\n                \"state\": \"IL\",\r\n                \"city\" : \"Chicago\",\r\n                \"zip\" : \"60601\",\r\n                 \"highways\": \"I-55\",\r\n                \"type_of_business\": \"Restaurant\",\r\n                \"miles_away\" : \"22 miles\",\r\n                \"avg_amt\" : \"$ 25\",\r\n                \"lat\" : \"18\",\r\n                \"lng\" : \"18\",\r\n                \"freeway_id\" : 3\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/business",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/business/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"Harry's Dinner\",\r\n                \"state\": \"IL\",\r\n                \"city\" : \"Chicago\",\r\n                \"zip\" : \"60601\",\r\n                 \"highways\": \"I-55\",\r\n                \"type_of_business\": \"Restaurant\",\r\n                \"miles_away\" : \"22 miles\",\r\n                \"avg_amt\" : \"$ 25\",\r\n                \"lat\" : \"18\",\r\n                \"lng\" : \"18\",\r\n                \"freeway_id\" : 3\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/business/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"business",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/business",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ii1hYTc1d19xS0lnYW5UcUdHcUNYdCJ9.eyJpc3MiOiJodHRwczovL2Rldi1qdS1sdjZpbS51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDExMTk2MTMyMDUwMTIwNTY1NzIiLCJhdWQiOlsiY29tLnJvdXRlLmJ1c2luZXNzIiwiaHR0cHM6Ly9kZXYtanUtbHY2aW0udXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTU5ODQ5NTc0NSwiZXhwIjoxNTk4NTgyMTQ1LCJhenAiOiJlS0t4Wkdrcno0b2t6aGxKejFmc0hNMUpLcEt5SDNieSIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJhZGQ6YnVzaW5lc3MiLCJhZGQ6cm91dGUiLCJkZWxldGU6YnVzaW5lc3MiLCJkZWxldGU6cm91dGUiLCJyZWFkOmJ1c2luZXNzZXMiLCJyZWFkOnJvdXRlcyIsInVwZGF0ZTpidXNpbmVzcyIsInVwZGF0ZTpyb3V0ZSJdfQ.luQ7rxEvePIiiu4JXgG7WPm9EyqlOAi8-lHgmx8XTdj-6SIJNywdcg446OuR_NJmetHu8IuGOpCx-W7WaMRrdAEHzzGkb1tExhpjwCFrM-fOVoMo0sOc0E2sv5Hu6aV5YbV-dvwoC6cGnTJbUvkhQSAGCmZ_n9e4GO7eYM3eNqoJ19-SAbii1-4qlMGg9f2SUBhQ9knq_ZVe-4zsKZkSKPrUD32p1Bx-tcWyaDJvXaakLO-OoQhceLYoADbd9zR1vpAGOShR10NiQ6JFgNKvmQsO2fZ_GNbA_dzO6JKAmBNC1q1PD9GiGiQe4JbERzIIhBMOkX0X2UjrlHbxPiSOQA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"name\": \"Rupi's Dinner\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://damp-journey-78807.herokuapp.com/business/2",
+					"protocol": "https",
+					"host": [
+						"damp-journey-78807",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"business",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
