@@ -1,2 +1,2 @@
 createdb route
-flask run
+web: gunicorn app:main
