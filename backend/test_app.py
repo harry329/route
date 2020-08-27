@@ -3,7 +3,7 @@ import unittest
 import json
 import pytest
 from flask_sqlalchemy import SQLAlchemy
-from main import getApp
+from app import getApp
 from database.freeway import Freeway
 from database.business_entity import BusinessEntity
 from database.freeway_business import freeway_business
