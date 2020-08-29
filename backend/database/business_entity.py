@@ -17,7 +17,9 @@ class BusinessEntity(db.Model):
     lat = Column(String)
     lng = Column(String)
     freeways = relationship(
-        "Freeway", secondary=freeway_business, back_populates="business_entitys"
+        "Freeway",
+        secondary=freeway_business,
+        back_populates="business_entitys"
     )
 
     def format(self):

@@ -6,9 +6,9 @@ from jose import jwt
 from urllib.request import urlopen
 
 
-AUTH0_DOMAIN = os.getenv('AUTH0_DOMAIN', "dev-ju-lv6im.us.auth0.com")
+AUTH0_DOMAIN = os.getenv("AUTH0_DOMAIN", "dev-ju-lv6im.us.auth0.com")
 ALGORITHMS = ["RS256"]
-API_AUDIENCE = os.getenv('API_AUDIENCE', "com.route.business")
+API_AUDIENCE = os.getenv("API_AUDIENCE", "com.route.business")
 
 ## AuthError Exception
 """

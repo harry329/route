@@ -95,7 +95,9 @@ def addBusiness():
     freeway.business_entitys.append(business)
     freeway.insert()
 
-    return jsonify({"success": True, "business_entity": business.format()}), 201
+    return jsonify(
+        {"success": True, "business_entity": business.format()}
+        ), 201
 
 
 @app.route("/business", methods=["GET"])
@@ -168,20 +170,26 @@ def unauthorized(error):
 @app.errorhandler(500)
 def unprocessable500(error):
     return (
-        jsonify({"success": False, "error": 500, "message": "Something went wrong"}),
+        jsonify(
+            {"success": False, "error": 500, "message": "Something went wrong"}
+            ),
         500,
     )
 
 
 @app.errorhandler(400)
 def unprocessable400(error):
-    return jsonify({"success": False, "error": 400, "message": "Bad Request"}), 400
+    return jsonify(
+        {"success": False, "error": 400, "message": "Bad Request"}
+        ), 400
 
 
 @app.errorhandler(404)
 def unprocessable404(error):
     return (
-        jsonify({"success": False, "error": 404, "message": "Resourse not found"}),
+        jsonify(
+            {"success": False, "error": 404, "message": "Resourse not found"}
+            ),
         404,
     )
 
